@@ -18,7 +18,6 @@ jobs:
         with:
           outputDir: opendatahub-operator/${{ github.event.inputs.version }}
           channels: stable,rolling
-          manifestsDir: bundle/manifests
           package: opendatahub-operator
           operatorRepo: https://github.com/opendatahub-io/opendatahub-operator
           operatorBranch: feature/update-sdk
