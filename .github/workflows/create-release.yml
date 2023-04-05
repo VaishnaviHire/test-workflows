@@ -28,3 +28,10 @@ jobs:
         uses: peter-evans/create-pull-request@v3.4.0 
         with:
          token: ${{ secrets.WORKFLOW_TEST }}
+         commit-message: Update report
+         committer: GitHub <noreply@github.com>
+         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+         signoff: false
+         branch: example-patches
+         delete-branch: true
+         title: '[Example] Update release'
