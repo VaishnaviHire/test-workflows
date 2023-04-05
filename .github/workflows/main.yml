@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add to Project
-        uses: peter-evans/add-issue-to-project@v2
+        uses: jwulf/github-project-automation-plus@v0.3.0
         with:
           project-name: 'Sample project'
-          column-name: 'To do'
+          board: 'View 1'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
